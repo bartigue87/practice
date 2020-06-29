@@ -1,0 +1,107 @@
+/* .flex {
+  display: flex;
+  justify-content: space-around;
+} */
+* {
+  margin: 0;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex-item2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.flex-item3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chick {
+  width: 143px;
+  height: 252px;
+  left: 208px;
+  top: 139px;
+}
+
+p {
+  font-family: Bitter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+}
+
+.menu {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  content: ""; /* This is necessary for the pseudo element to work. */
+  display: block; /* This will put the pseudo element on its own line. */
+  margin: 0 auto; /* This will center the border. */
+  width: 206px; /* Change this to whatever width you want. */
+  padding-top: 20px; /* This creates some space between the element and the border. */
+  border-bottom: 1px solid black; /* This creates the border. Replace black with whatever color you want. */
+}
+
+.e-menu {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  content: ""; /* This is necessary for the pseudo element to work. */
+  display: block; /* This will put the pseudo element on its own line. */
+  width: 106px; /* Change this to whatever width you want. */
+  padding-top: 20px; /* This creates some space between the element and the border. */
+  border-bottom: 1px solid black; /* This creates the border. Replace black with whatever color you want. */
+}
+
+.hummus {
+  width: 224px;
+  height: 263px;
+}
+
+.grill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 326px;
+  height: 123px;
+}
+
+.header {
+  width: 375px;
+  height: 72px;
+  left: 0px;
+  top: 0px;
+
+  background: #000000;
+}
+
+.navbar-logo {
+  position: absolute;
+  width: 95px;
+  height: 39px;
+  left: 140px;
+  top: 27px;
+}
+
+.hamburger {
+  position: absolute;
+
+  right: 12.5%;
+
+  bottom: 25%;
+}
