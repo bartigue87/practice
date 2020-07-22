@@ -8,6 +8,21 @@
   overflow: hidden;
 } */
 @media only screen and (max-width: 700px) {
+  .sidebar {
+    height: 100vh;
+    width: 100%;
+    background: white;
+
+    position: fixed;
+    z-index: 100;
+    left: -100%;
+    animation: slide-open 0.75s forwards;
+  }
+  @keyframes slide-open {
+    100% {
+      left: 0;
+    }
+  }
   .navbar {
     display: none;
   }
@@ -693,7 +708,7 @@
     font-family: Work Sans;
     font-style: normal;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 28px;
     width: 100%;
     height: 124px;
@@ -740,7 +755,7 @@
     font-size: 24px;
     line-height: 28px;
     width: 100%;
-    height: 360px;
+    height: 390px;
     /* height: 124px; */
   }
   .nav {
