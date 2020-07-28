@@ -1,0 +1,9 @@
+.schedule-container {
+  width: 100%;
+  height: auto;
+}
+.schedule {
+  height: 700px;
+  width: 90%;
+  background-color: black;
+}
