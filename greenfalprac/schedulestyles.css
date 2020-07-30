@@ -1,9 +1,28 @@
 .schedule-container {
   width: 100%;
   height: auto;
+  display: flex;
+  justify-content: center;
+}
+.title-container {
+  display: flex;
+  justify-content: center;
+}
+h1 {
+  width: 374px;
+  height: 34px;
+
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: center;
+
+  color: #000000;
 }
 .schedule {
-  height: 700px;
+  height: 600px;
   width: 90%;
   background-color: black;
 }
