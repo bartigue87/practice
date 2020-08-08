@@ -17,11 +17,12 @@ const loadData = (options) => {
 
 const App = (props) => {
   let [photos, setPhotos] = useState([]);
+  const [search, setSearch] = useState("");
 
   // CHALLENGE:
   // Change the query to one of your interests
   let [query, setQuery] = useState("puppies");
-  const queryInput = useRef(null);
+  const [queryInput, setQueryInput] = useState("");
 
   const numberOfPhotos = 20;
   const url =
@@ -41,15 +42,39 @@ const App = (props) => {
     });
   }, [query, url]);
 
+  const handleChange = (event) => {
+    setSearch(event.target.value);
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    setQuery(search);
+    setSearch("");
+  };
+
   const searchPhotos = (e) => {
     e.preventDefault();
-    setQuery(queryInput.current.value);
+    setQuery(queryInput);
   };
 
   return (
     <div className="box">
       <h2>{props.emoji}</h2>
-      <h1>{props.name}'s website</h1>
+      <h1>{props.name}'s Website</h1>
+      <div classname="flex">
+        <form onSubmit={handleSubmit} className="">
+          <input
+            placeholder="Search Images"
+            className="search"
+            type="text"
+            value={search}
+            onChange={handleChange}
+          />
+          <button className="search-btn" type="submit">
+            Change Theme
+          </button>
+        </form>
+      </div>
       <div className="grid">
         {query
           ? photos.map((photo) => {

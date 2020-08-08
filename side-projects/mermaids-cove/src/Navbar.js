@@ -41,15 +41,15 @@ export default function Navbar() {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/truck-menu">My Animals</Link>
+            <Link to="/my-animals">My Animals</Link>
           </li>
           <li>
-            <Link to="/catering">Records Book</Link>
+            <Link to="/records-book">Records Book</Link>
           </li>
           <li>
-            <Link to="/ourstory">Cage Building</Link>
+            <Link to="/cage-building">Cage Building</Link>
           </li>
-          <li>
+          {/* <li>
             <Link to="/schedule">Schedule</Link>
           </li>
           <li>
@@ -57,7 +57,7 @@ export default function Navbar() {
           </li>
           <li>
             <Link to="/find-us-in-stores">Find Us in Stores</Link>
-          </li>
+          </li> */}
         </ul>
       </nav>
     </>
