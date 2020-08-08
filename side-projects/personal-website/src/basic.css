@@ -1,7 +1,7 @@
 body {
   background: var(--background-image) no-repeat center center fixed;
   padding-top: 15px;
-  color: var(--main-color);
+
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

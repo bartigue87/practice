@@ -18,6 +18,8 @@ const loadData = (options) => {
 const App = (props) => {
   let [photos, setPhotos] = useState([]);
   const [search, setSearch] = useState("");
+  const [color, setColor] = useState("");
+  const [background, setBackground] = useState("");
 
   // CHALLENGE:
   // Change the query to one of your interests
@@ -46,10 +48,20 @@ const App = (props) => {
     setSearch(event.target.value);
   };
 
+  const handleColorChange = (event) => {
+    setColor(event.target.value);
+  };
+
+  const handleBgChange = (event) => {
+    setBackground(event.target.value);
+  };
+
   const handleSubmit = (event) => {
     event.preventDefault();
     setQuery(search);
     setSearch("");
+    setColor(color);
+    setBackground("");
   };
 
   const searchPhotos = (e) => {
@@ -58,9 +70,8 @@ const App = (props) => {
   };
 
   return (
-    <div className="box">
-      <h2>{props.emoji}</h2>
-      <h1>{props.name}'s Website</h1>
+    <div>
+      <h1 style={{ color }}>Website Customizer</h1>
       <div classname="flex">
         <form onSubmit={handleSubmit} className="">
           <input
@@ -70,6 +81,14 @@ const App = (props) => {
             value={search}
             onChange={handleChange}
           />
+          <input
+            placeholder="Color"
+            className="color"
+            type="color"
+            value={color}
+            onChange={handleColorChange}
+          />
+
           <button className="search-btn" type="submit">
             Change Theme
           </button>
@@ -80,7 +99,11 @@ const App = (props) => {
           ? photos.map((photo) => {
               return (
                 <div key={photo.id} className="item">
-                  <img className="img" src={photo.urls.regular} />
+                  <img
+                    style={{ border: `5px solid ${color}` }}
+                    className="img"
+                    src={photo.urls.regular}
+                  />
                   <div className="caption">
                     <span className="credits">
                       Photo by
