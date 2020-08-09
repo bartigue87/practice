@@ -18,7 +18,7 @@ const loadData = (options) => {
 const App = (props) => {
   let [photos, setPhotos] = useState([]);
   const [search, setSearch] = useState("");
-  const [color, setColor] = useState("");
+  const [color, setColor] = useState("silver");
   const [background, setBackground] = useState("");
 
   // CHALLENGE:
