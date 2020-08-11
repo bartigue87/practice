@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import { Link, Switch, Route } from "react-router-dom";
-// import Hamburger from "../assets/hamburger.png";
-// import Desktoplogo from "../assets/desktoplogo.png";
 import Sidebar from "./Sidebar";
 
 export default function Navbar() {
@@ -49,15 +47,6 @@ export default function Navbar() {
           <li>
             <Link to="/cage-building">Cage Building</Link>
           </li>
-          {/* <li>
-            <Link to="/schedule">Schedule</Link>
-          </li>
-          <li>
-            <Link to="/contact-us">Contact Us</Link>
-          </li>
-          <li>
-            <Link to="/find-us-in-stores">Find Us in Stores</Link>
-          </li> */}
         </ul>
       </nav>
     </>
