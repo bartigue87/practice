@@ -346,15 +346,14 @@
     justify-content: center;
   }
 
-  .ellipse1 {
+  .ellipse {
+    float: left;
     position: absolute;
-    border-radius: 100%;
-    width: 178px;
-    height: 178px;
-    left: 250px;
-    top: 750px;
-
-    background: rgba(140, 198, 62, 0.15);
+    width: 150px;
+    height: 150px;
+    z-index: -10;
+    clip-path: circle(50% at 50%);
+    background: lightblue;
   }
   .ellipse2 {
     position: absolute;
