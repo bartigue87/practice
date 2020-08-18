@@ -54,7 +54,7 @@ function shuffle(deck) {
   let temporaryCard;
   let randomCard;
 
-  while (0 !== currentCard) {
+  while (currentCard !== 0) {
     // Pick a card
     randomCard = Math.floor(Math.random() * currentCard);
     currentCard -= 1;

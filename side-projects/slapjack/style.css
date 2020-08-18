@@ -20,6 +20,10 @@ body {
   height: 21vh;
 }
 
+#player-deck {
+  cursor: pointer;
+}
+
 #opponent-deck > * {
   margin-right: 35vw;
   pointer-events: none;
