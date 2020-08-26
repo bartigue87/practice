@@ -346,60 +346,6 @@
     justify-content: center;
   }
 
-  .ellipse {
-    float: left;
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    z-index: -10;
-    clip-path: circle(50% at 50%);
-    background: lightblue;
-  }
-  .ellipse2 {
-    position: absolute;
-    border-radius: 100%;
-    width: 312px;
-    height: 312px;
-    left: 177px;
-
-    top: 127px;
-
-    background: rgba(248, 147, 31, 0.15);
-  }
-
-  .ellipse3 {
-    position: absolute;
-    border-radius: 100%;
-    width: 312px;
-    height: 312px;
-    left: 63px;
-    top: 497px;
-
-    background: rgba(248, 147, 31, 0.15);
-  }
-
-  .ellipse4 {
-    position: absolute;
-    border-radius: 100%;
-    width: 367px;
-    height: 367px;
-    left: -138px;
-    top: 205px;
-
-    background: rgba(140, 198, 62, 0.15);
-  }
-
-  .ellipse5 {
-    position: absolute;
-    border-radius: 100%;
-    width: 246px;
-    height: 246px;
-    left: 11px;
-    top: 1040px;
-
-    background: rgba(248, 147, 31, 0.15);
-  }
-
   .ellipse6 {
     position: absolute;
     border-radius: 100%;
@@ -770,4 +716,80 @@
   nav ul li:hover {
     color: #8cc63e;
   }
+}
+.ellipse {
+  float: left;
+  position: absolute;
+  width: 403px;
+  height: 403px;
+  left: 775px;
+  top: -68px;
+  z-index: -10;
+  clip-path: circle(50% at 50%);
+  background: rgba(248, 147, 31, 0.2);
+}
+.ellipse1 {
+  position: absolute;
+  float: right;
+  min-width: 428px;
+  height: 428px;
+  left: 1035px;
+  top: 32px;
+  z-index: -10;
+  clip-path: circle(50% at 50%);
+
+  background: rgba(140, 198, 62, 0.2);
+}
+.ellipse2 {
+  position: absolute;
+  width: 428px;
+  height: 428px;
+  left: -118px;
+  top: 58px;
+  z-index: -10;
+  clip-path: circle(50% at 50%);
+
+  background: rgba(140, 198, 62, 0.2);
+}
+
+.ellipse3 {
+  position: absolute;
+  width: 313px;
+  height: 313px;
+  left: 314px;
+  top: 682px;
+  z-index: -10;
+  clip-path: circle(50% at 50%);
+
+  background: rgba(248, 147, 31, 0.2);
+}
+
+.ellipse4 {
+  position: absolute;
+  width: 568px;
+  height: 568px;
+  left: -96px;
+  top: 778px;
+  z-index: -10;
+  clip-path: circle(50% at 50%);
+
+  background: rgba(140, 198, 62, 0.2);
+}
+
+.ellipse5 {
+  position: absolute;
+  border-radius: 100%;
+  width: 246px;
+  height: 246px;
+  left: 11px;
+  top: 1040px;
+
+  background: rgba(248, 147, 31, 0.15);
+}
+.circle-container {
+  height: 1356px;
+  width: 100%;
+  z-index: -9;
+  overflow: hidden;
+  position: absolute;
 }
