@@ -5,7 +5,7 @@
 :root {
   --off-white: #f2f2f2;
   --black: rgba(0, 0, 16, 0.8);
-  --blue: #0365c0;
+  --green1: #29c003;
   --green: #00cc4f;
   --orange: #ffb144;
   --disabled: rgba(0, 0, 16, 0.3);
@@ -28,7 +28,7 @@ html {
 
 header {
   padding: 1rem 2rem;
-  background: var(--blue);
+  background: var(--green1);
   color: var(--off-white);
   font-size: 2rem;
   font-weight: bold;
@@ -70,7 +70,7 @@ header {
 .filter {
   background-color: var(--black);
   padding: 0.4rem 0.4rem 0.1rem 0.4rem;
-  border: 3px solid var(--blue);
+  border: 3px solid var(--green1);
   border-radius: 2.2rem;
 }
 
@@ -106,7 +106,7 @@ input + svg {
 .filter-all:hover,
 .filter-all:checked + span,
 .filter-all:focus + span {
-  color: var(--blue);
+  color: var(--green1);
 }
 
 .beer:hover,
@@ -133,7 +133,7 @@ input + svg {
   transition: color 0.3s ease;
 }
 .page-btn:hover {
-  color: var(--blue);
+  color: var(--green1);
 }
 .page-btn:disabled {
   cursor: default;
@@ -195,7 +195,7 @@ input + svg {
   padding-bottom: 0.5rem;
   font-family: "Old Standard TT", serif;
   font-style: italic;
-  border-bottom: 2px solid var(--blue);
+  border-bottom: 2px solid var(--green1);
 }
 .beer__description {
   margin: 1rem 0;
